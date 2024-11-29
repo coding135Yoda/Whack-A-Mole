@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whack a MOLE</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Whack A MOLE</h1>
+
+  <!-- Home page and registration section -->
+  <div id="home-page">
+    <header>
+      <div id="register">
+        <div class="input_box">
+          <label for="username">Username</label><br>
+          <input type="text" id="username" placeholder="Enter your username" required /><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="password" placeholder="Create your Password" required />
+        </div>
+      </div>
+      <br>
+      <button id="submit-btn">Start Game</button>
+    </header>
+  </div>
+
+  <!-- Game section (hidden initially) -->
+  <section id="game-section" style="display: none;">
+    <h2 id="score">Score: 0</h2>
+    <h2 id="timer">Time: 60s</h2>
+    <div id="board"></div> <!-- 3*3 board -->
+  </section>
+
+  <!-- LEADEBOARD -->
+  <section id="leaderboard" style="display: none;">
+    <h2>Leaderboard</h2>
+    <table id="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="back-to-game">Back to Game</button>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
